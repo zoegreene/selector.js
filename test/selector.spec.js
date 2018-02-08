@@ -61,6 +61,9 @@ describe('Selector.js', () => {
       })
     })
 
+    // Note that we're just getting a single element (since we're searching by id), but we still want
+    // it to be inside of an array. Why might that be? The answer is so that we can interface with our
+    // elements in the same way, regardless of whether we have one or many!
     it('should find an element by id and put it into an array when selector starts with "#"', () => {
       const selection = new $('#page')
       expect(Array.isArray(selection.elements)).toBe(true)

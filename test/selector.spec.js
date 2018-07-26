@@ -33,7 +33,7 @@ describe('Selector.js', () => {
   })
   // After each test, we wipe the slate clean! This ensures
   // that the result of running one test does not influence the
-  // result of another! This is an important characteristic test specs!
+  // result of another! This is an important characteristic of test specs!
   afterEach(() => {
     const body = document.getElementsByTagName('body')[0]
     const parent = document.getElementById('test-parent')
@@ -76,6 +76,7 @@ describe('Selector.js', () => {
     it('should find elements by tag name and put them in an array when selector does not start with "." or "#" ', () => {
       const selection = new $('div')
       expect(Array.isArray(selection.elements)).toBe(true)
+      expect(selection.elements.length).toEqual(10)
       selection.elements.forEach(el => {
         expect(el.tagName).toEqual('DIV')
       })

@@ -2,8 +2,6 @@
 
 **Note: be sure to read this README.md thoroughly, as well as the comments in the test spec (when you run the tests, a page should open in your browser that displays the comments in a friendly, readable format)**
 
-In this portion of the workshop, we are going to be writing the JavaScript implementation of a Binary Search Tree.
-
 ## Running
 
 You should have Testem installed globally. *If not*: `npm install -g testem`.

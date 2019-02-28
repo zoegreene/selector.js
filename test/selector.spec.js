@@ -145,29 +145,6 @@ describe('Selector.js', () => {
         })
       })
     })
-
-    describe('blink', () => {
-      // Let's party like it's 1999!
-      // For your amusement:
-      // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink
-      it('alternates between hiding and showing at an interval', (done) => {
-        const selection = new $('.foobar')
-        selection.blink(100)
-
-        setTimeout(() => {
-          selection.elements.forEach(el => {
-            expect(el.style.display).toEqual('none')
-          })
-        }, 120)
-
-        setTimeout(() => {
-          selection.elements.forEach(el => {
-            expect(el.style.display).toEqual('inherit')
-          })
-          done()
-        }, 220)
-      })
-    })
   })
 
   describe('Chaining', () => {
